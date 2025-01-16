@@ -1,0 +1,238 @@
+:root {
+    --navy: rgb(14, 30, 59);
+    --lightNavy: rgb(34,42,69); /* #222A45 */
+    --gold: rgb(197, 168, 48);
+    --darkGold: rgb(185, 156, 22); /* #B99C16 */
+    --lightGold: rgb(196, 178, 88); /* #c4b258 */
+
+  }
+
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    margin:0;
+    padding:0;
+    /*font-family: 'Roboto', 'sans-serif';*/
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    overscroll-behavior-y: none; /* prevents bounce on x, y axis when overscrolling */
+    overscroll-behavior-x: none;
+}
+
+main {
+    padding-top:50px;
+}
+
+.headings {
+    color: var(--navy);
+    width:100%;
+}
+
+h1, h2 {
+    margin:0px;
+}
+
+li {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--navy);
+}
+
+a:hover {
+    color:#ffffff;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+article a:hover {
+    color:var(--gold);
+}
+
+#navContainer {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap:wrap;
+    gap: 20px 35px; /*row gap, column gap*/
+    /*background-color: rgb(210, 214, 198);*/
+    padding: 32px 20px 50px 20px;
+    margin:0px;
+
+}
+
+.courseCard {
+    position: relative;
+    width: 300px;
+    height:300px;
+    background-color: var(--lightNavy);
+    box-shadow: 5px 5px 5px var(--navy);
+    color:#FFFFFF;
+    overflow:hidden;
+    z-index: 1;
+    padding-top:18px;
+}
+
+.courseCard:hover {
+    cursor: pointer;
+}
+
+.courseCardActive {
+    position:absolute;
+    top:-290px;
+    left:-240px;
+    width: 300px;
+    height:300px;
+    background-color: var(--gold);/* rgb(255, 255, 50);*/
+    padding:0px;
+    transition: transform 250ms;
+    z-index:2;
+}
+
+.courseCard:hover .courseCardActive {
+    transform:translateX(240px);
+}
+
+.courseCard h2 {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
+.courseCard p {
+    position: relative;
+    margin-left:20px;
+    z-index: 3;
+}
+
+.courseCard li {
+    position: relative;
+    z-index: 3;
+}
+
+/* keyframe example changing color on hover*/
+
+@keyframes courseHover {
+    /* from {color: var(--navy);}
+    to {color: rgb(29, 62, 123);}  */
+    
+    /* rgb(199, 246, 250);}*/
+    /*from {background-color: var(--gold);}
+    to {background-color: var(--lightGold);}*/
+}
+
+.courseCard:hover {
+
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-name: courseHover;
+    animation-duration: .4s;
+}
+
+/* @keyframes courseHoverBG {
+    from {background-color: var(--navy);}
+    to {background-color: rgb(29, 62, 123);} 
+} */
+
+.courseCard:hover .courseCardActive {
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-name: courseHoverBG;
+    animation-duration: .4s;    
+}
+
+.centerContainer {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.page-title {
+    text-align:center;
+    margin:20px auto;
+    font-size: 34px;
+}
+
+article {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    margin:0px;
+    padding: 20px 40px;
+}
+
+article p {
+    font-size: 20px;
+    margin-top:8px;
+}
+
+.goldContainer {
+    background-color: var(--lightGold);
+    color:var(--navy);
+}
+
+.darkGoldContainer {
+    background-color: var(--darkGold);
+    color:var(--navy);    
+}
+
+.navyContainer {
+    background-color: var(--navy);
+    color:#ffffff;     
+}
+
+#select-container-parent{
+    background-color: var(--lightGold);
+    padding-top:20px;
+    color:var(--navy);
+}
+
+#select-container {
+    display:inline-flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    width:80%;
+    min-height:100px;
+    background-color: var(--lightNavy);
+    margin-left:10%;
+    margin-bottom:10px;
+}
+
+#select-container div {
+    display:flex;
+    flex-direction:column;
+}
+
+#select-container label {
+    color:var(--lightGold);
+    margin: 10px 10px 0px 10px;
+
+}
+
+#assignment-select, #project-select {
+    padding-left:15px;
+}
+
+.preview-select {
+    width:300px;
+    height:50px;
+    margin:10px;
+}
+
+#project-preview{
+    display:flex;
+    flex-direction: column;
+    /*width:100%;*/
+    min-height:630px;/*height:800px;*//*630px; -school laptops 768*/
+    align-items: center;
+    padding-top:15px;
+    background-color: var(--lightGold);
+}

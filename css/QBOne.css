@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'QBOne-Bold';
+    src: url('../fonts/QBOne-Bold.ttf')  format('truetype')
+}
+
+@font-face {
+    font-family: 'QBOne-Regular';
+    src: url('../fonts/QBOne-Regular.ttf')  format('truetype')
+}
+
+.QBOne-Bold {
+    font-family: 'QBOne-Bold';
+}
+
+.QBOne-Regular {
+    font-family: 'QBOne-Regular';
+}
