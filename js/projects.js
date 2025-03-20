@@ -75,7 +75,7 @@ let assignments = {
                 "title":"Leprechaun",
                 "author":"Lucas Welch and Cash Fegley",
                 "link":`https://codehs.com/share/id/pair-graphics-challenge-dxiTe0/run`,
-                "enbed":`https://codehs.com/sandbox/pschorey/leprechaun-lucas-wheeler-and-cash-fegley/embed/?display_mode=default&read_only=True&show_file_tree=False`
+                "enbed":`https://codehs.com/sandbox/pschorey/leprechaun-lucas-welch-and-cash-fegley/embed/?display_mode=default&read_only=True&show_file_tree=False`
             }
         ]
     },
@@ -169,7 +169,25 @@ let assignments = {
                 "author":"Landen Tillman and Cory Hudson",
                 "link":`https://codehs.com/share/id/pair-programing-basic-game-challenge-hBpiFV/run `,
                 "enbed":`https://codehs.com/sandbox/pschorey/landen-tillman-duck-hunt/embed/?display_mode=default&read_only=True&show_file_tree=False`
-            }
+            },
+            {
+                "title":"Tower Defense",
+                "author":"Robert Cahoon and Carter Harris",
+                "link":`https://codehs.com/sandbox/pschorey/robert-cahoon-c-harris-tower-defense/run `,
+                "enbed":`https://codehs.com/sandbox/pschorey/robert-cahoon-c-harris-tower-defense/embed/?display_mode=default&read_only=True&show_file_tree=False`
+            },
+            {
+                "title":"Moon Player",
+                "author":"Jacob Macy Gabe Garmire and Cash Fegley",
+                "link":`https://codehs.com/sandbox/pschorey/j-macy-g-garmire-c-fegley-moon-player/run `,
+                "enbed":`https://codehs.com/sandbox/pschorey/j-macy-g-garmire-c-fegley-moon-player/embed/?display_mode=default&read_only=True&show_file_tree=False`
+            },
+            {
+                "title":"Retro Tower",
+                "author":"Jacob Macy Gabe Garmire and Cash Fegley",
+                "link":`../principles-of-computing/J_Tharp_B_Wheeler_G_Johnson_Tower/index.html `,
+                "enbed":`../principles-of-computing/J_Tharp_B_Wheeler_G_Johnson_Tower/index.html`
+            },
         ]
     },    
     "Semester 2 Final Projects": {       
@@ -315,7 +333,7 @@ let projectSelectedListener = () => {
            const el = document.createElement("iframe");
             el.width = "1020px";
             el.height = "600px";
-            el.src = this.value;//"https://codehs.com/sandbox/pschorey/leprechaun-lucas-wheeler-and-cash-fegley/embed/?display_mode=default&read_only=True&show_file_tree=False";
+            el.src = this.value;//"https://codehs.com/sandbox/pschorey/leprechaun-lucas-welch-and-cash-fegley/embed/?display_mode=default&read_only=True&show_file_tree=False";
             document.getElementById("project-preview").appendChild(el);
         }
     });
@@ -327,4 +345,3 @@ let removePreview = () => {
         projectPreview.removeChild(projectPreview.firstChild);
     }
 }
-

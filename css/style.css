@@ -236,3 +236,10 @@ article p {
     padding-top:15px;
     background-color: var(--lightGold);
 }
+
+iframe {
+    width: 1020px;
+    height: 600px;
+    resize: both;
+    overflow: auto;
+}
