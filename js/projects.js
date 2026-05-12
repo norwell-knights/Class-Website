@@ -227,7 +227,13 @@ let assignments = {
                 "author":"Aiden Privett",
                 "link":`https://codehs.com/share/id/create-performance-task-CIl9W3/run`,
                 "enbed":`https://codehs.com/sandbox/pschorey/aiden-privett-portals/embed/?display_mode=default&show_file_tree=False`
-            }
+            },
+            {
+                "title":"Rat King",
+                "author":"Jacob Macey",
+                "link":`https://codehs.com/sandbox/pschorey/jacob-macey-ratking/run`,
+                "enbed":`https://codehs.com/sandbox/pschorey/jacob-macey-ratking/embed/?display_mode=default&show_file_tree=False`
+            }            
         ]
     }
 };
